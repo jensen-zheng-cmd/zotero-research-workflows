@@ -1,0 +1,9 @@
+{
+  "version": "0.5.3",
+  "source": "https://github.com/xunhe730/ZotPilot",
+  "release_url": "https://github.com/xunhe730/ZotPilot/releases/tag/v0.5.3",
+  "asset_url": "https://github.com/xunhe730/ZotPilot/releases/download/v0.5.3/zotpilot-connector-v0.5.3.zip",
+  "sha256": "8e3d5b180ac2b0aa8d19b56c33013c26bda6487638107387136152a95e12c6c1",
+  "extension_directory": "build/manifestv3",
+  "script": "agentAPI.js"
+}

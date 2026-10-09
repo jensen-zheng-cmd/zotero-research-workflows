@@ -1,0 +1,14 @@
+{
+  "candidates": [
+    {
+      "title": "Attention Is All You Need",
+      "arxiv_id": "1706.03762",
+      "landing_page_url": "https://arxiv.org/abs/1706.03762"
+    },
+    {
+      "title": "Deep Residual Learning for Image Recognition",
+      "arxiv_id": "1512.03385",
+      "landing_page_url": "https://arxiv.org/abs/1512.03385"
+    }
+  ]
+}

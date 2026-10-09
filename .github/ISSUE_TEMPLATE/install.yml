@@ -1,0 +1,35 @@
+name: 安装与适配问题
+description: 报告 Codex 安装、桥接、Connector 或入库验收问题
+title: '[安装] '
+body:
+  - type: markdown
+    attributes:
+      value: '请先让 Codex 脱敏错误信息。不要上传 Cookie、密钥、完整本机配置、论文全文或私人文库。'
+  - type: dropdown
+    id: os
+    attributes:
+      label: 操作系统
+      options:
+        - Windows
+        - macOS Apple Silicon
+        - macOS Intel
+        - 其他
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: 版本
+      description: 仓库版本、Python、Zotero、浏览器、ZotPilot、Connector
+  - type: textarea
+    id: failure
+    attributes:
+      label: 卡在哪一步、实际报错是什么？
+      description: 说明预期结果、实际结果、agent 已尝试的解决办法。
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostic
+    attributes:
+      label: 脱敏诊断与复现步骤
+      description: 保留错误码和版本；将用户名、私有目录、文库标识替换为占位符。

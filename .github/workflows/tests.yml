@@ -1,0 +1,22 @@
+name: portable-tests
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  unit:
+    strategy:
+      matrix:
+        os: [windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: python -m pip install -r skills/zotero-local-batch/requirements.txt
+      - run: python -X utf8 -B -m unittest discover -s skills/zotero-local-batch/scripts -p 'test_*.py' -v
+      - run: zotpilot bridge --help
+      - run: python -X utf8 -B skills/zotero-local-batch/scripts/prepare_connector.py --out .local/ci-connector

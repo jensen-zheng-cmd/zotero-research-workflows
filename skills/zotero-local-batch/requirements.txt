@@ -1,0 +1,3 @@
+# Known baseline, not a transitive lockfile. Record pip freeze after installation.
+pymupdf==1.28.2
+zotpilot==0.5.3

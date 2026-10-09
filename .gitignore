@@ -1,0 +1,11 @@
+**/__pycache__/
+**/*.pyc
+**/.venv/
+**/runtime.local.json
+**/*.local.md
+.local/
+work/
+outputs/
+*.log
+.DS_Store
+Thumbs.db
