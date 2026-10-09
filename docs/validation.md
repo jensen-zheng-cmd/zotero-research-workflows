@@ -17,6 +17,11 @@
 新增覆盖 Windows profile 路径、macOS profile 路径、中文及空格目录、停用的旧目录、多目录消歧、
 配置防覆盖、端点限制、缺配置停止和诊断结果不冒充真实验收。
 
+GitHub 托管的 **Windows 和 macOS 两个平台均通过**：从 requirements 安装全部依赖、31 项测试、
+`zotpilot bridge --help`、官方 Connector 下载/摘要校验/解压/补丁应用/Node 语法检查。
+[运行记录 37919118158](https://github.com/jensen-zheng-cmd/zotero-research-workflows/actions/runs/37919118158)
+对应代码提交 `864069e928de87da8b60bf3d5dafe20829e03b7e`；随后仅补充文档记录和修正上游来源链接，程序与测试未改变。
+
 测试中的 macOS 路径是模拟数据，并不表示已在真实 Mac 上完成安装。
 测试用临时目录、临时 PDF 与模拟本地 API，不写真实 Zotero 文库。
 新增测试初次运行因沙箱临时目录限制失败，改为在测试目录下创建临时夹后通过；产品逻辑未因此降低校验。
@@ -29,7 +34,7 @@
 | macOS Intel / Apple Silicon 原生安装 | 待验收 |
 | 公共扩展 Release 安装与标签页复用补丁 | 官方 0.5.3 包摘要、补丁应用及 Node 语法检查通过；浏览器加载待真机验收 |
 | 新入库 + 身份核对 + 重复运行 | 此次未操作真实文库 |
-| GitHub Windows/macOS CI | 发布时运行；结果以仓库 Actions 为准 |
+| GitHub Windows/macOS CI | 两个平台均通过；见上方运行记录 |
 | Undermind → 入库 → Recto 全链路 | 提供基础交接说明；无自动适配器 |
 
 因此，“一次委托由 agent 完成”是安装流程的目标，尚无用户样本证明一次完成率。

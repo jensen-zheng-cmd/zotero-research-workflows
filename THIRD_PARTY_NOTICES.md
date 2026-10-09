@@ -14,7 +14,7 @@
 安装时从来源下载第三方软件并保留其许可证。本仓库没有打包 ZotPilot、Connector 或 PyMuPDF 的实现。
 `patch_connector.py` 含源自 ZotPilot Connector `agentAPI.js` 的定位上下文和修改片段。
 原文件 Copyright © 2026 ZotPilot Contributors，许可为 AGPL-3.0-or-later；本仓库保留该声明。
-来源：[ZotPilot v0.5.3 的 agentAPI.js](https://github.com/xunhe730/ZotPilot/blob/v0.5.3/connector/src/common/agentAPI.js)。
+来源：[ZotPilot v0.5.3 的 agentAPI.js](https://github.com/xunhe730/ZotPilot/blob/v0.5.3/connector/src/browserExt/agentAPI.js)。
 Connector 上游版权及许可全文保存在 [Zotero-Connector-COPYING.txt](LICENSES/Zotero-Connector-COPYING.txt)。
 ZotPilot Python 包的 MIT 许可不覆盖此扩展代码；准备扩展时保留上游包和许可证，不将其改称 MIT。
 
